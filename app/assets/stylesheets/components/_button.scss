@@ -1,0 +1,21 @@
+.button-access {
+  margin: 0 auto;
+  color: white;
+  width: 24vw;
+  height: 5vh;
+  align-self: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 36px;
+  font-family: 'Saira', sans-serif;
+  font-size: 1.2em;
+  transition: 0.3s;
+  border: solid 1px white;
+  background-color: #101820;
+  padding: 6px;
+  &:hover {
+    border: solid 1px #EB1B2E;
+    background-color: #EB1B2E;
+  }
+}

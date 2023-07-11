@@ -1,0 +1,28 @@
+// Import your components CSS files here.
+@import 'button';
+@import 'container';
+@import 'letter';
+
+@media (max-width: 767px) {
+  .letter {
+    font-size: 15em;
+    height: 30vh;
+  }
+
+  .button-access {
+    padding: 12px;
+    font-size: 1em;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+  .letter {
+    font-size: 24rem;
+    height: 50vh;
+  }
+
+  .button-access {
+    padding: 12px;
+    font-size: 1em;
+  }
+}

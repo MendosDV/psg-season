@@ -1,0 +1,20 @@
+.container-main {
+  background-color: #101820;
+  margin: 0 auto;
+  position: absolute;
+  top: 50%;
+  left: 0;
+  right: 0;
+  transform: translateY(-50%);
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container-letter {
+  text-align: center;
+  margin: 0 auto;
+  width: 50vw;
+  text-align: center;
+}

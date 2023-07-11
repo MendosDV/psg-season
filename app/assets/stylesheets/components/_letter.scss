@@ -1,0 +1,115 @@
+.letter {
+  font-family: 'Alfa Slab One', cursive;
+  font-size: 36em;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 60vh;
+  }
+
+.letter:after {
+  content: "P";
+  background-clip: text;
+  -webkit-background-clip: text;
+  animation: changeLetterAndImage 3s linear infinite;
+  color: transparent;
+  background-position: center;
+  transition: none;
+  // width: 100%;
+}
+
+@keyframes changeLetterAndImage {
+  0%{
+    content: "P";
+    background-clip: text;
+    -webkit-background-clip: text;
+    background-image: url(https://w0.peakpx.com/wallpaper/778/203/HD-wallpaper-arc-de-triomphe-paris.jpg);
+    color: transparent;
+    background-size: cover;
+  }
+
+  19.9999%{
+    content: "P";
+    background-clip: text;
+    -webkit-background-clip: text;
+    background-image: url(https://w0.peakpx.com/wallpaper/778/203/HD-wallpaper-arc-de-triomphe-paris.jpg);
+    color: transparent;
+    background-size: cover;
+  }
+
+  20% {
+    content: "A";
+    background-clip: text;
+    -webkit-background-clip: text;
+    background-image: url(https://i.pinimg.com/736x/08/85/b8/0885b8d09cd06934fd657f3182deea00.jpg);
+    color: transparent;
+    background-size: 500px;
+  }
+
+  39.99999% {
+    content: "A";
+    background-clip: text;
+    -webkit-background-clip: text;
+    background-image: url(https://i.pinimg.com/736x/08/85/b8/0885b8d09cd06934fd657f3182deea00.jpg);
+    color: transparent;
+    background-size: 500px;
+  }
+
+  40% {
+    content: "R";
+    background-clip: text;
+    -webkit-background-clip: text;
+    background-image: url(https://e0.pxfuel.com/wallpapers/164/358/desktop-wallpaper-louvre-the-louvre.jpg) ;
+    color: transparent;
+    background-size: 600px;
+  }
+
+  59.9999% {
+    content: "R";
+    background-clip: text;
+    -webkit-background-clip: text;
+    background-image: url(https://e0.pxfuel.com/wallpapers/164/358/desktop-wallpaper-louvre-the-louvre.jpg) ;
+    color: transparent;
+    background-size: 600px;
+  }
+
+  60% {
+    content: "I";
+    background-clip: text;
+    -webkit-background-clip: text;
+    background-image: url(https://www.pariszigzag.fr/wp-content/uploads/2019/03/rue-de-rivoli-paris-zigzag-e1553598945715.png);
+    color: transparent;
+    background-size: cover;
+
+  }
+
+  79.99999% {
+    content: "I";
+    background-clip: text;
+    -webkit-background-clip: text;
+    background-image: url(https://www.pariszigzag.fr/wp-content/uploads/2019/03/rue-de-rivoli-paris-zigzag-e1553598945715.png);
+    color: transparent;
+    background-size: cover;
+  }
+
+  80% {
+    content: "S";
+    background-clip: text;
+    -webkit-background-clip: text;
+    background-image: url(https://images.pexels.com/photos/4324002/pexels-photo-4324002.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1) ;
+    color: transparent;
+    background-size: cover;
+  }
+
+  99.99999% {
+    content: "S";
+    background-clip: text;
+    -webkit-background-clip: text;
+    background-image: url(https://images.pexels.com/photos/4324002/pexels-photo-4324002.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1) ;
+    color: transparent;
+    background-size: cover;
+  }
+
+  100% {
+  }
+}
