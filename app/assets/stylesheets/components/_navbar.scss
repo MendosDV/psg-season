@@ -3,9 +3,9 @@
   margin-bottom: 0.8em;
   display: flex;
   align-items: center;
-  gap: 2em;
-  letter-spacing: 0.2em;
-  padding: 0.9em;
+  // gap: 2.5em;
+  letter-spacing: 0.3em;
+  padding: 1em;
 }
 
 #logo-nav {
@@ -13,9 +13,11 @@
 }
 
 .title-nav {
-
+  font-size: 1.7em;
+  padding: 0 40px;
 }
 
 #psg {
-
+  font-weight: 700;
+  border-right: solid 2px rgba(125, 125, 125, 0.3);
 }
