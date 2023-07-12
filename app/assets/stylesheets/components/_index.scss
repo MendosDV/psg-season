@@ -10,8 +10,8 @@
   }
 
   .button-access {
-    padding: 12px;
-    font-size: 1em;
+    padding: 30px 80px;
+    font-size: 0.7em;
   }
 }
 
@@ -22,7 +22,14 @@
   }
 
   .button-access {
-    padding: 12px;
+    padding: 30px;
+    font-size: 0.8em;
+  }
+}
+
+@media (min-width: 992px) and (max-width: 1389px) {
+  .button-access {
+    padding: 30px;
     font-size: 1em;
   }
 }

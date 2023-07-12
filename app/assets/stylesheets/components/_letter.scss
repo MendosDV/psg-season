@@ -1,3 +1,119 @@
+// .letter {
+//   font-family: 'Alfa Slab One', cursive;
+//   font-size: 36em;
+//   display: flex;
+//   align-items: center;
+//   justify-content: center;
+//   height: 60vh;
+//   }
+
+// .letter:after {
+//   content: "P";
+//   background-clip: text;
+//   -webkit-background-clip: text;
+//   animation: changeLetterAndImage 3s linear infinite;
+//   color: transparent;
+//   background-position: center;
+//   transition: none;
+//   // width: 100%;
+// }
+
+// @keyframes changeLetterAndImage {
+//   0%{
+//     content: "P";
+//     background-clip: text;
+//     -webkit-background-clip: text;
+//     background-image: url(https://w0.peakpx.com/wallpaper/778/203/HD-wallpaper-arc-de-triomphe-paris.jpg);
+//     color: transparent;
+//     background-size: cover;
+//   }
+
+//   19.9999%{
+//     content: "P";
+//     background-clip: text;
+//     -webkit-background-clip: text;
+//     background-image: url(https://w0.peakpx.com/wallpaper/778/203/HD-wallpaper-arc-de-triomphe-paris.jpg);
+//     color: transparent;
+//     background-size: cover;
+//   }
+
+//   20% {
+//     content: "A";
+//     background-clip: text;
+//     -webkit-background-clip: text;
+//     background-image: url(https://i.pinimg.com/736x/08/85/b8/0885b8d09cd06934fd657f3182deea00.jpg);
+//     color: transparent;
+//     background-size: 500px;
+//   }
+
+//   39.99999% {
+//     content: "A";
+//     background-clip: text;
+//     -webkit-background-clip: text;
+//     background-image: url(https://i.pinimg.com/736x/08/85/b8/0885b8d09cd06934fd657f3182deea00.jpg);
+//     color: transparent;
+//     background-size: 500px;
+//   }
+
+//   40% {
+//     content: "R";
+//     background-clip: text;
+//     -webkit-background-clip: text;
+//     background-image: url(https://e0.pxfuel.com/wallpapers/164/358/desktop-wallpaper-louvre-the-louvre.jpg) ;
+//     color: transparent;
+//     background-size: 600px;
+//   }
+
+//   59.9999% {
+//     content: "R";
+//     background-clip: text;
+//     -webkit-background-clip: text;
+//     background-image: url(https://e0.pxfuel.com/wallpapers/164/358/desktop-wallpaper-louvre-the-louvre.jpg) ;
+//     color: transparent;
+//     background-size: 600px;
+//   }
+
+//   60% {
+//     content: "I";
+//     background-clip: text;
+//     -webkit-background-clip: text;
+//     background-image: url(https://www.pariszigzag.fr/wp-content/uploads/2019/03/rue-de-rivoli-paris-zigzag-e1553598945715.png);
+//     color: transparent;
+//     background-size: cover;
+
+//   }
+
+//   79.99999% {
+//     content: "I";
+//     background-clip: text;
+//     -webkit-background-clip: text;
+//     background-image: url(https://www.pariszigzag.fr/wp-content/uploads/2019/03/rue-de-rivoli-paris-zigzag-e1553598945715.png);
+//     color: transparent;
+//     background-size: cover;
+//   }
+
+//   80% {
+//     content: "S";
+//     background-clip: text;
+//     -webkit-background-clip: text;
+//     background-image: url(https://images.pexels.com/photos/4324002/pexels-photo-4324002.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1) ;
+//     color: transparent;
+//     background-size: cover;
+//   }
+
+//   99.99999% {
+//     content: "S";
+//     background-clip: text;
+//     -webkit-background-clip: text;
+//     background-image: url(https://images.pexels.com/photos/4324002/pexels-photo-4324002.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1) ;
+//     color: transparent;
+//     background-size: cover;
+//   }
+
+//   100% {
+//   }
+// }
+
 .letter {
   font-family: 'Alfa Slab One', cursive;
   font-size: 36em;
@@ -5,21 +121,20 @@
   align-items: center;
   justify-content: center;
   height: 60vh;
-  }
+}
 
 .letter:after {
   content: "P";
   background-clip: text;
   -webkit-background-clip: text;
-  animation: changeLetterAndImage 3s linear infinite;
+  animation: changeLetterAndImage 4s linear infinite;
   color: transparent;
   background-position: center;
   transition: none;
-  // width: 100%;
 }
 
 @keyframes changeLetterAndImage {
-  0%{
+  0% {
     content: "P";
     background-clip: text;
     -webkit-background-clip: text;
@@ -28,7 +143,7 @@
     background-size: cover;
   }
 
-  19.9999%{
+  14.2857% {
     content: "P";
     background-clip: text;
     -webkit-background-clip: text;
@@ -37,7 +152,7 @@
     background-size: cover;
   }
 
-  20% {
+  14.2858% {
     content: "A";
     background-clip: text;
     -webkit-background-clip: text;
@@ -46,7 +161,7 @@
     background-size: 500px;
   }
 
-  39.99999% {
+  28.5714% {
     content: "A";
     background-clip: text;
     -webkit-background-clip: text;
@@ -55,35 +170,25 @@
     background-size: 500px;
   }
 
-  40% {
+  28.5715% {
     content: "R";
     background-clip: text;
     -webkit-background-clip: text;
-    background-image: url(https://e0.pxfuel.com/wallpapers/164/358/desktop-wallpaper-louvre-the-louvre.jpg) ;
+    background-image: url(https://e0.pxfuel.com/wallpapers/164/358/desktop-wallpaper-louvre-the-louvre.jpg);
     color: transparent;
     background-size: 600px;
   }
 
-  59.9999% {
+  42.8571% {
     content: "R";
     background-clip: text;
     -webkit-background-clip: text;
-    background-image: url(https://e0.pxfuel.com/wallpapers/164/358/desktop-wallpaper-louvre-the-louvre.jpg) ;
+    background-image: url(https://e0.pxfuel.com/wallpapers/164/358/desktop-wallpaper-louvre-the-louvre.jpg);
     color: transparent;
     background-size: 600px;
   }
 
-  60% {
-    content: "I";
-    background-clip: text;
-    -webkit-background-clip: text;
-    background-image: url(https://www.pariszigzag.fr/wp-content/uploads/2019/03/rue-de-rivoli-paris-zigzag-e1553598945715.png);
-    color: transparent;
-    background-size: cover;
-
-  }
-
-  79.99999% {
+  42.8572% {
     content: "I";
     background-clip: text;
     -webkit-background-clip: text;
@@ -92,24 +197,66 @@
     background-size: cover;
   }
 
-  80% {
-    content: "S";
+  57.1428% {
+    content: "I";
     background-clip: text;
     -webkit-background-clip: text;
-    background-image: url(https://images.pexels.com/photos/4324002/pexels-photo-4324002.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1) ;
+    background-image: url(https://www.pariszigzag.fr/wp-content/uploads/2019/03/rue-de-rivoli-paris-zigzag-e1553598945715.png);
     color: transparent;
     background-size: cover;
   }
 
-  99.99999% {
+  57.1429% {
     content: "S";
     background-clip: text;
     -webkit-background-clip: text;
-    background-image: url(https://images.pexels.com/photos/4324002/pexels-photo-4324002.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1) ;
+    background-image: url(https://w0.peakpx.com/wallpaper/778/203/HD-wallpaper-arc-de-triomphe-paris.jpg);
+    color: transparent;
+    background-size: cover;
+  }
+
+  71.4285% {
+    content: "S";
+    background-clip: text;
+    -webkit-background-clip: text;
+    background-image: url(https://w0.peakpx.com/wallpaper/778/203/HD-wallpaper-arc-de-triomphe-paris.jpg);
+    color: transparent;
+    background-size: cover;
+  }
+
+  71.4286% {
+    content: "S";
+    background-clip: text;
+    -webkit-background-clip: text;
+    background-image: url(https://www.3wallpapers.fr/wp-content/uploads/2015/01/PSG-Maillot-iPhone-3Wallpapers-Parallax.jpg);
+    color: transparent;
+    background-size: cover;
+  }
+
+  85.7142% {
+    content: "S";
+    background-clip: text;
+    -webkit-background-clip: text;
+    background-image: url(https://www.3wallpapers.fr/wp-content/uploads/2015/01/PSG-Maillot-iPhone-3Wallpapers-Parallax.jpg);
+    color: transparent;
+    background-size: cover;
+  }
+
+  85.7143% {
+    content: "G";
+    background-clip: text;
+    -webkit-background-clip: text;
+    background-image: url(https://static.onzemondial.com/photo_article/627835/228896/1200-L-psg-avant-le-match-du-titre-brest-les-ultras-ont-embras-le-parc-des-princes.jpg);
     color: transparent;
     background-size: cover;
   }
 
   100% {
+    content: "G";
+    background-clip: text;
+    -webkit-background-clip: text;
+    background-image: url(https://static.onzemondial.com/photo_article/627835/228896/1200-L-psg-avant-le-match-du-titre-brest-les-ultras-ont-embras-le-parc-des-princes.jpg);
+    color: transparent;
+    background-size: cover;
   }
 }
