@@ -4,3 +4,15 @@
 
 // Your CSS partials
 @import "components/index";
+
+.none-link {
+  color: inherit;
+  text-decoration: inherit;
+}
+
+body {
+  background-image: url("/assets/background.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  object-fit: cover;
+}
