@@ -11,6 +11,11 @@
   text-decoration: inherit;
 }
 
+.blue-bold-text {
+  color: #02244B;
+  font-weight: bold;
+}
+
 .underline-hover-effect {
   display: inline-block;
   position: relative;
@@ -24,12 +29,11 @@
   bottom: 0;
   width: 0;
   height: 2px;
-  background-color: #EB1B2E;
+  background-color: #02244B;
   transition: width 0.25s ease-out;
 }
 
 .underline-hover-effect:hover {
-  // color: #EB1B2E;
   cursor: pointer;
 }
 
@@ -43,38 +47,35 @@ body {
   object-fit: cover;
   font-family: 'Roboto Condensed', sans-serif;
   margin: 0;
-  overflow: hidden;
 }
 
 .flex {
   display: flex;
-  // align-items: center;
-  justify-content: space-between;
-  // border: solid green 1px;
-  width: 90vw;
+  justify-content: center;
+  gap: 5em;
+  width: 84vw;
   height: 80vh;
   margin: 0 auto;
 }
 
 .squad {
-  // border: solid 2px red;
-  width: 40vw;
+  width: 36vw;
+  height: 100vh;
 }
 
 .position {
   display: flex;
   align-items: center;
-  justify-content: center;
   font-size: 1em;
-  gap: 3em;
-  font-size: 1.4em;
+  gap: 2.5em;
+  font-size: 1.5em;
+  margin-bottom: 2em;
 }
 
 .players-cards {
   background-image: url(https://wallpaperaccess.com/full/1612726.jpg);
   background-size: cover;
   object-fit: cover;
-  // border: solid 2px red;
   width: 40vw;
   background-position: center;
 }
@@ -85,17 +86,49 @@ body {
 
 }
 
-#test {
-  background-image: url("/assets/blue.png");
-  background-size: contain;
-  background-repeat: no-repeat;
-  width: 30vw; /* Set the width to 100% of its container */
-  height: 100vh; /* Set the height to 100% of its container */
-  text-align: center;
-  margin: 0 auto;
+.players {
+  font-size: 2em;
 }
 
+.player-info {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  align-items: center;
 
-.players {
-  color: red;
+  &:hover {
+    background-image: url("/assets/blue.png");
+    background-repeat: no-repeat;
+    background-position: center ;
+    padding: 1em;
+    background-size: contain;
+    transition: 1s;
+
+  }
+}
+
+.info-content {
+  position: relative; /* Create a stacking context */
+  z-index: 1; /* Set the stacking order */
+}
+
+.player-info:hover .info-content {
+  background-image: url("/assets/blue.png");
+  background-repeat: no-repeat;
+  background-position: center ;
+  padding: 1em;
+  background-size: contain;
+  color: white;
+  text-align: center;
+}
+
+.number-design {
+  color: white;
+  -webkit-text-stroke: 1px rgb(0, 0, 0);
+  -webkit-text-fill-color: transparent;
+  grid-column: 1 / span 1;
+}
+
+.player-name {
+  grid-column: 2 / span 1;
+  margin-left: 3em;
 }

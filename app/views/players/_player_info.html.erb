@@ -1,0 +1,12 @@
+<% if @players.any? %>
+  <% @players.each do |player| %>
+    <div class="player-info test" id="blue-pic">
+      <div class="info-content">
+        <span class="number-design"><%= player.number %></span>
+        <span class="player-name"><%= player.first_name %> <%= player.last_name %></span>
+      </div>
+    </div>
+  <% end %>
+<% else %>
+  <em>Sorry, no players found.</em>
+<% end %>

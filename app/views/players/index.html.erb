@@ -1,15 +1,15 @@
 <%= render 'components/navbar' %>
 
 <div class="flex">
-  <div class="squad" data-controller="players">
+  <div class="squad">
     <div class="position">
-      <p class="underline-hover-effect" data-action="click->players#showPlayer" data-position="goalkeeper">Goalkeepers</p>
-      <p class="underline-hover-effect">Defenders</p>
-      <p class="underline-hover-effect">Midfielders</p>
-      <p class="underline-hover-effect">Forwards</p>
+      <%= link_to "Goalkeepers", players_path(query: 'goalkeeper'), class: "position-name underline-hover-effect none-link #{'blue-bold-text' if params[:query] == 'goalkeeper'}" %>
+      <%= link_to "Defenders", players_path(query: 'defender'), class: "position-name underline-hover-effect none-link #{'blue-bold-text' if params[:query] == 'defender'}" %>
+      <%= link_to "Midfielders", players_path(query: 'midfilder'), class: "position-name underline-hover-effect none-link #{'blue-bold-text' if params[:query] == 'midfilder'}" %>
+      <%= link_to "Forwards", players_path(query: 'forward'), class: "position-name underline-hover-effect none-link #{'blue-bold-text' if params[:query] == 'forward'}" %>
     </div>
-    <div class="players" data-players-target="players">
-      <%= render partial: 'player', collection: @players %>
+    <div class="players">
+      <%= render partial: 'player_info', players: @players %>
     </div>
   </div>
   <div class="players-cards">
