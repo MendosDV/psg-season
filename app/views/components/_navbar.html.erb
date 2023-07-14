@@ -1,5 +1,5 @@
 <div class="nav">
   <img id="logo-nav" src="<%= image_path('logo.png') %>" alt="logo">
-  <p class="title-nav" id="psg">PSG</p>
-  <p class="title-nav">SQUAD</p>
+  <%= link_to "PSG", root_path, class: "none-link title-nav", id: "psg" %>
+  <%= link_to "SQUAD", players_path, class: "none-link title-nav" %>
 </div>

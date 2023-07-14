@@ -6,12 +6,12 @@
 #   movies = Movie.create([{ name: "Star Wars" }, { name: "Lord of the Rings" }])
 #   Character.create(name: "Luke", movie: movies.first)
 
-puts "Generate new players"
+puts "Generate create players"
 
 Player.destroy_all
 
 puts "Create Goalkeepers"
-rico = Player.new(
+rico = Player.create(
   first_name: 'Sergio',
   last_name: 'Rico',
   birth_date: '1993-09-01',
@@ -22,7 +22,7 @@ rico = Player.new(
   number: '16'
 )
 
-letellier = Player.new(
+letellier = Player.create(
   first_name: 'Alexandre',
   last_name: 'Letellier',
   birth_date: '1990-12-11',
@@ -33,7 +33,7 @@ letellier = Player.new(
   number: '90'
 )
 
-donnarumma = Player.new(
+donnarumma = Player.create(
   first_name: 'Gianluigi',
   last_name: 'Donnarumma',
   birth_date: '1999-02-25',
@@ -45,7 +45,7 @@ donnarumma = Player.new(
 )
 
 puts "Create Defenders"
-hakimi = Player.new(
+hakimi = Player.create(
   first_name: 'Achraf',
   last_name: 'Hakimi',
   birth_date: '1998-11-04',
@@ -56,7 +56,7 @@ hakimi = Player.new(
   number: '2'
 )
 
-kimpembe = Player.new(
+kimpembe = Player.create(
   first_name: 'Presnel',
   last_name: 'Kimpembe',
   birth_date: '1995-13-08',
@@ -67,7 +67,7 @@ kimpembe = Player.new(
   number: '3'
 )
 
-marquinhos = Player.new(
+marquinhos = Player.create(
   first_name: '',
   last_name: 'Marquinhos',
   birth_date: '1994-05-14',
@@ -78,7 +78,7 @@ marquinhos = Player.new(
   number: '5'
 )
 
-bernat = Player.new(
+bernat = Player.create(
   first_name: 'Juan',
   last_name: 'Bernat',
   birth_date: '1993-03-01',
@@ -89,7 +89,7 @@ bernat = Player.new(
   number: '14'
 )
 
-mendes = Player.new(
+mendes = Player.create(
   first_name: 'Nuno',
   last_name: 'Mendes',
   birth_date: '2002-06-19',
@@ -100,7 +100,7 @@ mendes = Player.new(
   number: '25'
 )
 
-mukiele = Player.new(
+mukiele = Player.create(
   first_name: 'Nordi',
   last_name: 'Mukiele',
   birth_date: '1997-11-01',
@@ -111,7 +111,7 @@ mukiele = Player.new(
   number: '26'
 )
 
-pembele = Player.new(
+pembele = Player.create(
   first_name: 'Timothée',
   last_name: 'Pembélé',
   birth_date: '2002-09-09',
@@ -122,7 +122,7 @@ pembele = Player.new(
   number: '29'
 )
 
-bitshiabu = Player.new(
+bitshiabu = Player.create(
   first_name: 'El Chadaille',
   last_name: 'Bitshiabu',
   birth_date: '2005-05-16',
@@ -133,7 +133,7 @@ bitshiabu = Player.new(
   number: '31'
 )
 
-skriniar = Player.new(
+skriniar = Player.create(
   first_name: 'Milan',
   last_name: 'Skriniar',
   birth_date: '1995-02-11',
@@ -144,7 +144,7 @@ skriniar = Player.new(
   number: '37'
 )
 
-hernandez = Player.new(
+hernandez = Player.create(
   first_name: 'Lucas',
   last_name: 'Hernandez',
   birth_date: '1996-02-14',
@@ -156,7 +156,7 @@ hernandez = Player.new(
 )
 
 puts "Create Midfilders"
-verratti = Player.new(
+verratti = Player.create(
   first_name: 'Marco',
   last_name: 'Verratti',
   birth_date: '1992-11-05',
@@ -167,7 +167,7 @@ verratti = Player.new(
   number: '6'
 )
 
-ruiz = Player.new(
+ruiz = Player.create(
   first_name: 'Fabian',
   last_name: 'Ruiz',
   birth_date: '1996-04-03',
@@ -178,7 +178,7 @@ ruiz = Player.new(
   number: '8'
 )
 
-pereira = Player.new(
+pereira = Player.create(
   first_name: 'Danilo',
   last_name: 'Pereira',
   birth_date: '1991-11-09',
@@ -189,7 +189,7 @@ pereira = Player.new(
   number: '15'
 )
 
-vitinha = Player.new(
+vitinha = Player.create(
   first_name: '',
   last_name: 'Vitinha',
   birth_date: '2000-02-13',
@@ -200,7 +200,7 @@ vitinha = Player.new(
   number: '17'
 )
 
-sanches = Player.new(
+sanches = Player.create(
   first_name: 'Renato',
   last_name: 'Sanches',
   birth_date: '1997-08-18',
@@ -211,7 +211,7 @@ sanches = Player.new(
   number: '18'
 )
 
-soler = Player.new(
+soler = Player.create(
   first_name: 'Carlos',
   last_name: 'Soler',
   birth_date: '1997-01-02',
@@ -222,7 +222,7 @@ soler = Player.new(
   number: '28'
 )
 
-zaireemery = Player.new(
+zaireemery = Player.create(
   first_name: 'Warren',
   last_name: 'Zaïre-Emery',
   birth_date: '2006-03-08',
@@ -233,7 +233,7 @@ zaireemery = Player.new(
   number: '33'
 )
 
-gharbi = Player.new(
+gharbi = Player.create(
   first_name: 'Ismaël',
   last_name: 'Gharbi',
   birth_date: '2004-04-10',
@@ -244,7 +244,7 @@ gharbi = Player.new(
   number: '35'
 )
 
-kangin = Player.new(
+kangin = Player.create(
   first_name: 'Lee',
   last_name: 'Kang-In',
   birth_date: '2001-02-19',
@@ -255,7 +255,7 @@ kangin = Player.new(
   number: '19'
 )
 
-ugarte = Player.new(
+ugarte = Player.create(
   first_name: 'Manuel',
   last_name: 'Ugarte',
   birth_date: '2001-04-11',
@@ -266,8 +266,19 @@ ugarte = Player.new(
   number: '4'
 )
 
+ndour = Player.create(
+  first_name: 'Cher',
+  last_name: 'Ndour',
+  birth_date: '2004-07-24',
+  nationality: 'Italy',
+  height: '190',
+  weight: '75',
+  position: 'midfilder',
+  number: '27'
+)
+
 puts "Create Forwards"
-mbappe = Player.new(
+mbappe = Player.create(
   first_name: 'Kylian',
   last_name: 'Mbappe',
   birth_date: '1998-12-20',
@@ -278,7 +289,7 @@ mbappe = Player.new(
   number: '7'
 )
 
-neymar = Player.new(
+neymar = Player.create(
   first_name: '',
   last_name: 'Neymar JR',
   birth_date: '1992-02-05',
@@ -289,7 +300,7 @@ neymar = Player.new(
   number: '10'
 )
 
-ekitike = Player.new(
+ekitike = Player.create(
   first_name: 'Hugo',
   last_name: 'Ekitike',
   birth_date: '2002-06-20',
@@ -300,7 +311,7 @@ ekitike = Player.new(
   number: '44'
 )
 
-housni = Player.new(
+housni = Player.create(
   first_name: 'Housni',
   last_name: 'Ilyes',
   birth_date: '2005-05-14',
@@ -311,7 +322,7 @@ housni = Player.new(
   number: '37'
 )
 
-asensio = Player.new(
+asensio = Player.create(
   first_name: 'Marco',
   last_name: 'Asensio',
   birth_date: '1996-01-21',

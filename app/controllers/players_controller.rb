@@ -1,5 +1,5 @@
 class PlayersController < ApplicationController
   def index
-    @players = Player.all
+    @players = Player.where(position: params[:position])
   end
 end

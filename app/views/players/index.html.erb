@@ -1,17 +1,17 @@
 <%= render 'components/navbar' %>
 
 <div class="flex">
-  <div class="squad">
+  <div class="squad" data-controller="players">
     <div class="position">
-      <p>Goalkeepers</p>
-      <p>Defenders</p>
-      <p>Midfilders</p>
-      <p>Forwards</p>
+      <p class="underline-hover-effect" data-action="click->players#showPlayer" data-position="goalkeeper">Goalkeepers</p>
+      <p class="underline-hover-effect">Defenders</p>
+      <p class="underline-hover-effect">Midfielders</p>
+      <p class="underline-hover-effect">Forwards</p>
     </div>
-    <div class="players-by-position">
-      <p id="test">test</p>
+    <div class="players" data-players-target="players">
+      <%= render partial: 'player', collection: @players %>
     </div>
   </div>
-  <div class="players">
+  <div class="players-cards">
   </div>
 </div>
