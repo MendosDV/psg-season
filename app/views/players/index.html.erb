@@ -15,3 +15,9 @@
   <div class="carousel-cards">
   </div>
 </div>
+
+<% @players.each do |player| %>
+  <% if player.picture.attached? %>
+    <%= cl_image_tag player.picture.key, height: 540, width: 400, crop: :fill %>
+  <% end %>
+<% end %>
