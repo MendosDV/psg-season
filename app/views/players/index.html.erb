@@ -8,16 +8,20 @@
       <%= link_to "Midfielders", players_path(query: 'midfilder'), class: "position-name underline-hover-effect none-link #{'blue-bold-text' if params[:query] == 'midfilder'}" %>
       <%= link_to "Forwards", players_path(query: 'forward'), class: "position-name underline-hover-effect none-link #{'blue-bold-text' if params[:query] == 'forward'}" %>
     </div>
-    <div class="players">
+    <div class="players" data-controller="player">
       <%= render partial: 'player_info', players: @players %>
     </div>
   </div>
   <div class="carousel-cards">
+    <% @players.each do |player| %>
+      <div class="player-card" data-target="player.card" data-player-id="<%= player.id %>">
+        <%= cl_image_tag player.picture.key, crop: :fill %>
+        <div class="card-info">
+          <span class="player-name"><%= player.first_name %> <%= player.last_name %></span>
+          <span class="player-height"><%= player.height %> cm</span>
+          <span class="player-weight"><%= player.weight %> kg</span>
+        </div>
+      </div>
+    <% end %>
   </div>
 </div>
-
-<% @players.each do |player| %>
-  <% if player.picture.attached? %>
-    <%= cl_image_tag player.picture.key, height: 540, width: 400, crop: :fill %>
-  <% end %>
-<% end %>
