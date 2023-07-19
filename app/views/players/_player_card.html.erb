@@ -1,0 +1,8 @@
+<div class="player-card">
+  <%= cl_image_tag player.picture.key, crop: :fill %>
+  <div class="card-info">
+    <span class="player-name"><%= player.first_name %> <%= player.last_name %></span>
+    <span class="player-height"><%= player.height %> cm</span>
+    <span class="player-weight"><%= player.weight %> kg</span>
+  </div>
+</div>

@@ -1,7 +1,7 @@
 
 <%= render 'components/navbar' %>
 
-<div class="flex">
+<div class="flex" data-controller="player">
   <div class="squad">
     <div class="position">
       <%= link_to "Goalkeepers", players_path(query: 'goalkeeper'), class: "position-name underline-hover-effect none-link #{'blue-bold-text' if params[:query] == 'goalkeeper'}" %>
@@ -9,20 +9,13 @@
       <%= link_to "Midfielders", players_path(query: 'midfilder'), class: "position-name underline-hover-effect none-link #{'blue-bold-text' if params[:query] == 'midfilder'}" %>
       <%= link_to "Forwards", players_path(query: 'forward'), class: "position-name underline-hover-effect none-link #{'blue-bold-text' if params[:query] == 'forward'}" %>
     </div>
-    <div class="players" data-controller="player">
+    <div class="players">
       <%= render partial: 'player_info', players: @players %>
     </div>
   </div>
-  <div class="carousel-cards">
+  <div class="carousel-cards" id="player-card-placeholder">
     <% @players.each do |player| %>
-      <div class="player-card" data-target="player.card" data-player-id="<%= player.id %>">
-        <%= cl_image_tag player.picture.key, crop: :fill %>
-        <div class="card-info">
-          <span class="player-name"><%= player.first_name %> <%= player.last_name %></span>
-          <span class="player-height"><%= player.height %> cm</span>
-          <span class="player-weight"><%= player.weight %> kg</span>
-        </div>
-      </div>
+      <%= render partial: 'player_card', locals: { player: player } %>
     <% end %>
   </div>
 </div>

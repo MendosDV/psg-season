@@ -1,22 +1,29 @@
 import { Controller } from "@hotwired/stimulus"
 
 export default class extends Controller {
-  static targets = ["card"];
+  static targets = ["playerCard"];
 
-  connect() {
-    // Met la carte du premier joueur en tant que carte active par défaut
-    console.log("Hello");
-    this.showCard(0);
-    console.log(this.showCard(0));
-  }
+  hello(event) {
+    // const playerFirstName = event.target.dataset.firstName;
+    // const playerLastName = event.target.dataset.lastName;
+    // console.log(`Hello ${playerFirstName} ${playerLastName}`);
 
-  showCard(index) {
-    // Supprime la classe "active" de toutes les cartes
-    this.cardTargets.forEach((card) => {
-      card.classList.remove("active");
-    });
+    const playerId = event.target.dataset.id;
+    console.log("ID :", playerId);
 
-    // Ajoute la classe "active" à la carte sélectionnée
-    this.cardTargets[index].classList.add("active");
+    const url = new URL(window.location.href);
+    url.searchParams.set("player_id", playerId);
+
+    fetch(url, {
+      headers: {
+        Accept: "application/json",
+      },
+    })
+      .then((response) => response.json())
+      .then((data) => {
+        console.log(data);
+        const playerCardPlaceholder = this.element.querySelector('#player-card-placeholder');
+        playerCardPlaceholder.innerHTML = data.partial;
+      })
   }
 }
