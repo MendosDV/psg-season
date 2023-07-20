@@ -32,7 +32,7 @@
   grid-template-columns: auto 1fr;
   align-items: center;
   margin-bottom: 0.8em;
-  cursor: pointer;
+  // cursor: pointer;
 
   &:hover {
     background-image: url("/assets/blue.png");
@@ -40,14 +40,12 @@
     background-position: center ;
     padding: 1em;
     background-size: contain;
-    transition: 1.8s;
-
   }
 }
 
 .info-content {
-  position: relative; /* Create a stacking context */
-  z-index: 1; /* Set the stacking order */
+  position: relative;
+  z-index: 1;
 }
 
 .player-info:hover .info-content {
@@ -61,6 +59,7 @@
 }
 
 .number-design {
+  font-size: 1.2m;
   color: white;
   -webkit-text-stroke: 1px rgb(0, 0, 0);
   -webkit-text-fill-color: transparent;
