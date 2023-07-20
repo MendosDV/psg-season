@@ -33,30 +33,69 @@
   align-items: center;
   margin-bottom: 0.8em;
   // cursor: pointer;
+  // transition-delay: 2s;
 
-  &:hover {
-    background-image: url("/assets/blue.png");
-    background-repeat: no-repeat;
-    background-position: center ;
-    padding: 1em;
-    background-size: contain;
-  }
+  // &:hover {
+  //   margin-left: 1em;
+  //   transition-duration: .5s;
+  //   color: white;
+  //   background-image: url("/assets/blue.png");
+  //   margin-left: 1em;
+  //   background-repeat: no-repeat;
+  //   background-position: center ;
+  //   background-size: 100% 140%;
+  // }
 }
 
 .info-content {
-  position: relative;
+  display: flex;
   z-index: 1;
+  transition-duration: .5s;
+  overflow: visible;
+
+  position: relative;
+
+  span {
+    z-index: 2;
+  }
+
+  img {
+    display: none;
+  }
+
+  &:hover {
+    align-items: center;
+    margin-left: 1em;
+    img {
+      display: block;
+      position: absolute;
+      height: 150%;
+      width: 120%;
+    }
+
+    * {
+      color: white
+    }
+  }
 }
 
-.player-info:hover .info-content {
-  background-image: url("/assets/blue.png");
-  background-repeat: no-repeat;
-  background-position: center ;
-  padding: 1em;
-  background-size: contain;
-  color: white;
-  text-align: center;
-}
+// .divquidiv:hover {
+//   background-image: url("/assets/blue.png");
+//   background-repeat: no-repeat;
+//   background-position: center;
+//   background-size: 400px;
+//   color: white;
+// }
+
+// .player-info:hover .info-content {
+
+  // color: white;
+  // padding: 1em;
+  // color: white;
+  // text-align: center;
+//   transition-duration: .5s;
+
+// }
 
 .number-design {
   font-size: 1.2m;

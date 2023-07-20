@@ -1,0 +1,19 @@
+#field {
+  // border: solid 1px red;
+  max-width: 80vw;
+  max-height: 100vh; /* Ajout d'une hauteur maximale à la div */
+  margin: 0 auto;
+  /* margin-top: 5em; */
+  display: flex;
+  justify-content: space-between;
+  overflow: hidden; /* Pour cacher toute partie d'image qui dépasserait */
+
+  img {
+    transform: rotate(90deg) scale(0.5);
+    width: 60%;
+    height: 100%; /* Pour que l'image prenne la hauteur totale de la div */
+    // object-fit: cover;
+    border-radius: 12px;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  }
+}
