@@ -2,17 +2,7 @@
 <%= render 'components/navbar' %>
 
 <div class="flex" data-controller="player">
-  <div class="squad">
-    <div class="position">
-      <%= link_to "Goalkeepers", players_path(query: 'goalkeeper'), class: "position-name underline-hover-effect none-link #{'blue-bold-text' if params[:query] == 'goalkeeper'}" %>
-      <%= link_to "Defenders", players_path(query: 'defender'), class: "position-name underline-hover-effect none-link #{'blue-bold-text' if params[:query] == 'defender'}" %>
-      <%= link_to "Midfielders", players_path(query: 'midfilder'), class: "position-name underline-hover-effect none-link #{'blue-bold-text' if params[:query] == 'midfilder'}" %>
-      <%= link_to "Forwards", players_path(query: 'forward'), class: "position-name underline-hover-effect none-link #{'blue-bold-text' if params[:query] == 'forward'}" %>
-    </div>
-    <div class="players">
-      <%= render partial: 'player_info', players: @players %>
-    </div>
-  </div>
+  <%= render partial: 'squad', players: @players %>
   <div class="carousel-cards" id="player-card-placeholder">
   </div>
 </div>
