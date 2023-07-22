@@ -8,7 +8,11 @@ class PlayersController < ApplicationController
       @players = @players.where("position ILIKE :query", query: "%#{params[:query]}%")
     end
 
-    @player = Player.find(params[:player_id]) if params[:player_id].present?
+    if params[:player_id].present?
+      @player = Player.find(params[:player_id])
+    else
+      @player = @players.first
+    end
 
     respond_to do |format|
       format.html

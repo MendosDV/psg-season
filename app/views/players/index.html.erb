@@ -4,5 +4,25 @@
 <div class="flex" data-controller="player">
   <%= render partial: 'squad', players: @players %>
   <div class="carousel-cards" id="player-card-placeholder">
+    <% if params[:player_id].present? == false %>
+      <div class="player-card">
+        <%= cl_image_tag @player.picture.key, crop: :fill %>
+        <div class="card-info">
+          <span class="player-first-name"><%= @player.first_name %></span>
+          <span class="player-last-name"><%= @player.last_name %></span>
+
+          <div class="other-information">
+            <span class="player-information">Birth date</span>
+            <span class="player-information">Nationality</span>
+            <span class="player-answer"><%= @player.birth_date %></span>
+            <span class="player-answer"><%= @player.nationality %></span>
+            <span class="player-information">Height</span>
+            <span class="player-information">Weight</span>
+            <span class="player-answer"><%= @player.height %> cm</span>
+            <span class="player-answer"><%= @player.weight %> kg</span>
+          </div>
+        </div>
+      </div>
+    <% end %>
   </div>
 </div>

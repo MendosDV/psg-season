@@ -1,0 +1,19 @@
+.avatar {
+  border-radius: 50%;
+  border: solid 1px rgba(37, 70, 158, 0.48);
+  margin: 0 auto;
+}
+
+.moove-avatar {
+  display: grid;
+  gap: 0.6em;
+  justify-content: center;
+  cursor: grab;
+  z-index: 99;
+  border: solid 1px red;
+  position: absolute;
+}
+
+.first-last-name {
+  font-size: 0.7em;
+}

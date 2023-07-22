@@ -1,24 +1,38 @@
 #field {
-  // border: solid 1px red;
-  margin: 0 3em;
+  margin: 0 auto;
   display: flex;
-  justify-content: center;
-  max-height: 80vh;
+  justify-content: space-between;
+  width: 60vw;
+  height: 90vh;
+  border-radius: 16px;
+  background-color: #272C30;
+  box-shadow: rgba(0, 0, 0, 0.2) 0px 20px 30px;
+  margin-bottom: 2em;
 
-  img {
-    transform: rotate(90deg) scale(0.8);
-    width: 70%;
-    border-radius: 12px;
+  #img-field {
+    transform: rotate(90deg) scale(0.62);
+    border-radius: 16px;
     box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
-    transform-origin: top right;
-    margin-top: 82vh;
-    max-width: 50vw;
-    align-self: flex-start;
-    // border: solid 1px red;
+    position: relative;
+    // border: solid 3px rgb(8, 0, 255);
+    margin-left: 5em;
   }
 }
 
-.players-list {
-  // border: solid 1px red;
-  margin: 0;
+.player-list {
+  // border: solid 3px rgb(8, 0, 255);
+  margin-left: 2em;
+  position: absolute;
+  width: 22vw;
+
+  h2 {
+    color: rgb(227, 227, 227);
+    font-weight: 300;
+    text-align: center;
+    margin-bottom: 1.5em;
+  }
+
+  h4 {
+    color: rgb(227, 227, 227);
+  }
 }
