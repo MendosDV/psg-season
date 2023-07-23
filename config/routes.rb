@@ -5,5 +5,5 @@ Rails.application.routes.draw do
   # root "articles#index"
   root "pages#home"
   resources :players, only: [:index]
-  get 'compo', to: 'players#compo'
+  resources :lineups, only: [:new, :create]
 end
