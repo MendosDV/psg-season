@@ -43,7 +43,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
       console.log(player);
       player.style.left = `${leftPercentage}vw`;
-      console.log("Left", leftPercentage);
+      console.log("Lefft", leftPercentage);
       player.style.top = `${topPercentage}vh`;
       console.log("Top", topPercentage);
     }
