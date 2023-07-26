@@ -1,8 +1,6 @@
 import { Controller } from "@hotwired/stimulus"
 
 export default class extends Controller {
-  static targets = ["playerCard"];
-
   hello(event) {
     const playerId = event.target.dataset.id;
     console.log("ID :", playerId);

@@ -1,0 +1,72 @@
+.round {
+  position: absolute;
+  padding: 2px;
+  display: inline-block;
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  border: 2px dashed white;
+  text-align: center;
+  line-height: 36px;
+  font-size: 2em;
+  cursor: pointer;
+  color: white;
+  background-color: #0000007d;
+  z-index: 2;
+  font-weight: 300;
+}
+
+#player1 {
+  top: 81.1944394049347vh;
+  left: 60.21850585937501vw;
+}
+
+#player2 {
+  top: 77vh;
+  left: 47vw;
+}
+
+#player3 {
+  top: 77vh;
+  left: 53vw;
+}
+
+#player4{
+  top: 77vh;
+  left: 59vw;
+}
+
+#player5{
+  top: 77vh;
+  left: 65vw;
+}
+
+#player6{
+  top: 52.446933962264154vh;
+  left: 51vw;
+}
+
+#player7{
+  top: 52.446933962264154vh;
+  left: 55.53100585937501vw;
+}
+
+#player8{
+  top: 52.446933962264154vh;
+  left: 60.2655029296875vw;
+}
+
+#player9{
+  top: 52.446933962264154vh;
+  left: 65vw;
+}
+
+#player10{
+  top: 52.446933962264154vh;
+  left: 69.5vw;
+}
+
+#player11{
+  top: 31.028891509433965%;
+  left: 60.140380859375%;
+}

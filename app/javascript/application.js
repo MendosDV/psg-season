@@ -2,39 +2,50 @@
 import "@hotwired/turbo-rails"
 import "./controllers"
 
-var mousePosition;
-var offset = [0,0];
-var divs;
-var isDown = false;
+document.addEventListener("DOMContentLoaded", () => {
+  let isDown = false;
+  let offset = [0, 0];
+  let player;
 
-divs = document.getElementsByClassName("moove-avatar");
+  const divs = document.getElementsByClassName("round");
+  const divsArray = Array.from(divs);
 
-var divsArray = Array.from(divs);
-
-divsArray.forEach(div => {
-  document.addEventListener('mousedown', function(e) {
+  divsArray.forEach((div) => {
+    div.addEventListener("mousedown", function (e) {
       isDown = true;
-      offset = [
-          div.offsetLeft - e.clientX,
-          div.offsetTop - e.clientY
-      ];
-  }, true);
+      const rect = div.getBoundingClientRect();
+      offset = [rect.left - e.clientX, rect.top - e.clientY];
+      player = div;
+    });
 
-  document.addEventListener('mouseup', function() {
+    div.addEventListener("mouseup", function () {
       isDown = false;
-  }, true);
+    });
+  });
 
-  document.addEventListener('mousemove', function(event) {
-      event.preventDefault();
-      if (isDown) {
-          mousePosition = {
+  document.addEventListener("mouseup", function () {
+    isDown = false;
+    player = null;
+  });
 
-              x : event.clientX,
-              y : event.clientY
+  document.addEventListener("mousemove", function (event) {
+    event.preventDefault();
+    if (isDown && player) {
+      const mousePosition = {
+        x: event.clientX,
+        y: event.clientY,
+      };
 
-          };
-          div.style.left = (mousePosition.x + offset[0]) + 'px';
-          div.style.top  = (mousePosition.y + offset[1]) + 'px';
-      }
-  }, true);
+      const vw = window.innerWidth;
+      const vh = window.innerHeight;
+      const leftPercentage = (mousePosition.x + offset[0]) / vw * 100;
+      const topPercentage = (mousePosition.y + offset[1]) / vh * 100;
+
+      console.log(player);
+      player.style.left = `${leftPercentage}vw`;
+      console.log("Left", leftPercentage);
+      player.style.top = `${topPercentage}vh`;
+      console.log("Top", topPercentage);
+    }
+  });
 });

@@ -11,9 +11,7 @@
   width: 3vw;
 }
 
-.title-nav {
-  font-size: 1.5em;
-  padding: 0 40px;
+.red-effect {
   background: linear-gradient(to right, #F94849, #F94849 50%, #000000 50%);
   background-clip: text;
   -webkit-background-clip: text;
@@ -22,10 +20,14 @@
   background-position: 100%;
   transition: background-position 0.5s ease;
 
-
   &:hover {
     background-position: 0 100%;
   }
+}
+
+.title-nav {
+  font-size: 1.5em;
+  padding: 0 40px;
 }
 
 #psg {

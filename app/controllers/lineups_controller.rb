@@ -6,7 +6,7 @@ class LineupsController < ApplicationController
   def create
     @lineup = Lineup.new(lineup_params)
     if @lineup.save
-      redirect_to new_lineup_path, notice: 'Lineup was successfully created.'
+      redirect_to new_lineup_path, flash: { notice: 'Lineup was successfully created.' }
     else
       render :new
     end
