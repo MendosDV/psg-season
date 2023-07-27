@@ -3,10 +3,8 @@
   font-weight: bold;
 }
 
-
 .squad {
   width: 36vw;
-  height: 100vh;
 }
 
 .position {
@@ -80,4 +78,13 @@
 .player-name {
   grid-column: 2 / span 1;
   margin-left: 3em;
+}
+
+.flex {
+  display: flex;
+  justify-content: inherit;
+  gap: 2em;
+  height: 80vh;
+  width: 84vw;
+  margin: 0 auto;
 }

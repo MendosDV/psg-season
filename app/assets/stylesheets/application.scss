@@ -37,20 +37,10 @@
 }
 
 body {
-  background-image: url("/assets/background.png");
+  background-image: url("https://res.cloudinary.com/dnr3qh3r5/image/upload/v1690446358/background_lpv400.png");
   background-size: cover;
   object-fit: cover;
   font-family: 'Roboto Condensed', sans-serif;
   margin: 0;
   max-width: 100%;
-  overflow: hidden;
-}
-
-.flex {
-  display: flex;
-  justify-content: inherit;
-  gap: 2em;
-  height: 80vh;
-  width: 84vw;
-  margin: 0 auto;
 }

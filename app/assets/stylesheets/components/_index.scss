@@ -9,7 +9,7 @@
 @import 'avatar';
 @import 'position_player';
 
-@media (max-width: 767px) {
+@media (min-width: 320px) and (max-width: 767px) {
 
   .letter {
     font-size: 15em;
@@ -22,17 +22,17 @@
   }
 
   #logo-nav {
-    width: 7vw;
+    width: 6%;
   }
 
   .title-nav {
-    font-size: 1.1em;
-    padding: 0 30px;
+    font-size: 1em;
+    padding: 0 14px;
   }
 
   .position {
-    font-size: 1em;
-    gap: 2em;
+    font-size: 0.8em;
+    gap: 1em;
     margin-bottom: 2em;
   }
 
@@ -41,14 +41,37 @@
   }
 
   .carousel-cards {
-    height: 48vh;
-    width: auto;
-    top: 24vh;
+    height: 60vh;
+    width: 55vw;
+    top: 26vh;
+
+    img {
+      width: 66%;
+    }
   }
 
   .card-info {
     font-size: 8px;
     padding-bottom: 1.5em;
+  }
+
+  .flex {
+    display: block;
+    height: 80vh;
+    width: 84vw;
+  }
+
+  .squad {
+    width: 90vw;
+    margin-bottom: 2em;
+  }
+
+  .player-card {
+    width: 140%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
   }
 }
 
