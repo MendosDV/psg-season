@@ -41,12 +41,13 @@
   }
 
   .carousel-cards {
-    height: 60vh;
-    width: 55vw;
+    height: 58%;
+    width: 40vw;
     top: 26vh;
 
     img {
-      width: 66%;
+      width: 100%;
+      object-fit: scale-down;
     }
   }
 
@@ -67,7 +68,7 @@
   }
 
   .player-card {
-    width: 140%;
+    width: 100%;
     height: 100%;
     display: flex;
     justify-content: center;
