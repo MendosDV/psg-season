@@ -11,6 +11,10 @@
 
 @media (min-width: 320px) and (max-width: 767px) {
 
+  .nav {
+    padding-bottom: 1em;
+  }
+
   .letter {
     font-size: 15em;
     height: 30vh;
@@ -73,6 +77,43 @@
     display: flex;
     justify-content: center;
     align-items: center;
+  }
+
+  #field {
+    display: block;
+  }
+
+  .player-list {
+    margin-left: 0;
+    width: 100%;
+
+    h2 {
+      margin-bottom: 1em;
+      padding-top: 1em;
+      font-size: 1em;
+    }
+  }
+
+  .form {
+    padding-left: 1em;
+
+    label {
+      font-size: 0.8em;
+    }
+
+    .btn-lineup {
+      margin-top: 0;
+      font-size: 0.8em;
+    }
+
+    .select-lineup {
+      font-size: 1em;
+      height: 2em;
+    }
+
+    .input-lineup {
+      height: 2em;
+    }
   }
 }
 
