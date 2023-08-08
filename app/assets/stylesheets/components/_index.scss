@@ -81,8 +81,8 @@
 
   #field {
     display: block;
-    width: 100vw;
-    height: 146vh;
+    width: 100%;
+    height: 100%;
     margin-left: 2em;
   }
 
@@ -129,9 +129,10 @@
 
   .position-on-field {
     width: 100%;
+    height: 100%;
 
     #img-field {
-      width: 72vh;
+      width: 120%;
       margin-top: 6em;
     }
   }
