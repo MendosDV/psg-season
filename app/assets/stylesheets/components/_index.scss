@@ -81,6 +81,9 @@
 
   #field {
     display: block;
+    width: 100vw;
+    height: 146vh;
+    margin-left: 2em;
   }
 
   .player-list {
@@ -95,6 +98,11 @@
   }
 
   .form {
+
+    .grid-label {
+      display: grid;
+    }
+
     padding-left: 1em;
 
     label {
@@ -104,16 +112,32 @@
     .btn-lineup {
       margin-top: 0;
       font-size: 0.8em;
+      width: 44%;
     }
 
     .select-lineup {
       font-size: 1em;
       height: 2em;
+      width: 40%;
     }
 
     .input-lineup {
       height: 2em;
+      width: 80%;
     }
+  }
+
+  .position-on-field {
+    width: 100%;
+
+    #img-field {
+      width: 72vh;
+      margin-top: 6em;
+    }
+  }
+
+  .btn-lineup {
+    margin-top: 7em;
   }
 }
 
@@ -155,6 +179,7 @@
     font-size: 12px;
     padding-bottom: 2em;
   }
+
 }
 
 @media (min-width: 992px) and (max-width: 1389px) {

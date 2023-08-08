@@ -19,7 +19,6 @@
   #img-field {
     transform: rotate(90deg) ;
     width: 150%;
-    height: 55%;
     border-radius: 16px;
     box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
     // border: solid 3px rgb(8, 0, 255);
@@ -29,6 +28,7 @@
 .player-list {
   margin-left: 2em;
   width: 30%;
+  letter-spacing: 0.1em;
 
   h2 {
     color: rgb(188, 188, 188);

@@ -6,15 +6,20 @@
 
     <%= form_with model: @lineup do |f| %>
       <div class="form">
-        <%= f.label :title, "Squad Title", class: "label-lineup"%>
-        <%= f.text_field :title, class: "input-lineup" %>
-        <%= f.label :subtitle, "Subtitle", class: "label-lineup"%>
-        <%= f.text_field :subtitle, class: "input-lineup" %>
-        <%= f.label :formation, "Formation", class: "label-lineup"%>
-        <%= f.select :formation, [["4-5-1"], ["4-4-2"], ["4-4-1-1"], ["4-3-3"], ["4-3-3 (D)"], ["4-2-3-1"], ["4-1-2-1-2"], ["3-5-2"], ["3-4-3"], ["3-2-4-1"], ["3-2-2-3"]], {}, data: { action: "change->add-player#change" }, class: "select-lineup" %>
-        <%= f.submit "Save and share", class: "btn-lineup"%>
-      </div>
-    <% end %>
+        <div class="grid-label">
+          <div>
+            <%= f.label :title, "Squad Title", class: "label-lineup"%>
+            <%= f.text_field :title, class: "input-lineup" %>
+          </div>
+          <div>
+            <%= f.label :subtitle, "Subtitle", class: "label-lineup"%>
+            <%= f.text_field :subtitle, class: "input-lineup" %>
+          </div>
+          <div>
+            <%= f.label :formation, "Formation", class: "label-lineup"%>
+            <%= f.select :formation, [["4-5-1"], ["4-4-2"], ["4-4-1-1"], ["4-3-3"], ["4-3-3 (D)"], ["4-2-3-1"], ["4-1-2-1-2"], ["3-5-2"], ["3-4-3"], ["3-2-4-1"], ["3-2-2-3"]], {}, data: { action: "change->add-player#change" }, class: "select-lineup" %>
+          </div>
+        </div>
 
     <%# @players.each do |player| %>
       <%# <div class="moove-avatar"> %>
@@ -37,4 +42,7 @@
     <span id="player10" class="round" data-action="click->add-player#add">+</span>
     <span id="player11" class="round" data-action="click->add-player#add">+</span>
   </div>
+  <%= f.submit "Save and share", class: "btn-lineup"%>
+      </div>
+    <% end %>
 </div>
